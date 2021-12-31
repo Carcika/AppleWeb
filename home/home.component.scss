@@ -1,0 +1,230 @@
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+    transition: 0.5s;
+}
+
+// Imports
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+// Landing place
+
+.homeimg {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('../../assets/images/homeimg.jpg');
+    top: 0vh;
+    left: 0%;
+    filter: blur(2px);
+    backdrop-filter: blur(10px);
+    -webkit-filter: blur(5px);
+}
+.applelogo {
+    position: absolute;
+    width: 2.2%;
+    left: 1.5%;
+    top: 2vh;
+}
+.welcome {
+    position: absolute;
+    color: white;
+    font-size: 3vw;
+    left: 50%;
+    top: 29%;
+    transform: translate(-50%);
+}
+.browse {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    width: 10%;
+    height: 5vh;
+    border: none;
+    background: rgba(90, 90, 90, 0.5);
+    border-radius: 15px;
+    color: white;
+    font-size: 1.2vw;
+    transition: 0.5s;
+    letter-spacing: 1mm;
+    cursor: pointer;
+}
+.browse:hover {
+    background: rgba(90, 90, 90, 0.7);
+}
+
+    // Products
+
+#products {
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    height: 100vh;
+    background: #272727;
+    left: 0%;
+
+    .brandnew {
+        position: absolute;
+        top: -3%;
+        left: 8%;
+        font-size: 6vw;
+        width: 21%;
+        line-height: 185px;
+        font-family: 'Roboto Slab', serif;
+        background: rgb(255,255,255);
+        background: linear-gradient(90deg, rgba(255,255,255,0.6474964985994398) 0%, rgba(255,255,255,0.13) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .macbook {
+        position: absolute;
+        left: 40%;
+        top: 7%;      
+        width: 18%;
+        height: 42vh;
+        background: rgb(166,66,228);
+        background: linear-gradient(90deg, rgba(166,66,228,1) 0%, rgba(92,0,162,1) 100%);
+        border-radius: 20px;
+        box-shadow: 0px 4px 0px 0px rgba(24, 24, 24, 0.4);
+        cursor: pointer;
+
+        img {
+            position: relative;
+            width: 95%;
+            top: 35%;
+            left: 1.5%;
+        }
+
+        p {
+            position: relative;
+            bottom: 53%;
+            left: 28%;
+            color: white;
+            font-family: roboto slab;
+            font-size: 2vw;
+        }
+    }
+    .macbook:hover, .iphone:hover, .ipad:hover, .watch:hover, .airpods:hover {
+        transform: scale(1.025);
+        box-shadow: 0px 6px 0px 0px rgba(24, 24, 24, 0.4);
+    }
+
+    .iphone {
+        position: absolute;
+        left: 71%;
+        top: 7%;      
+        width: 18%;
+        height: 42vh;
+        background: rgb(244,129,157);
+        background: linear-gradient(90deg, rgba(244,129,157,1) 0%, rgba(180,22,50,1) 100%);
+        border-radius: 20px;
+        box-shadow: 0px 4px 0px 0px rgba(24, 24, 24, 0.4);
+        cursor: pointer;
+
+        img {
+            position: relative;
+            width: 80%;
+            top: 27%;
+            left: 11%;
+        }
+
+        p {
+            position: relative;
+            bottom: 73%;
+            left: 34%;
+            color: white;
+            font-family: roboto slab;
+            font-size: 2vw;
+        }
+    }
+
+    .airpods {
+        position: absolute;
+        left: 9%;
+        top: 55%;      
+        width: 18%;
+        height: 42vh;
+        background: linear-gradient(95deg, rgba(#E1E1E1, 55%), rgba(#E8E8E8, 5%));
+        border-radius: 20px;
+        box-shadow: 0px 4px 0px 0px rgba(24, 24, 24, 0.4);
+        cursor: pointer;
+
+        img {
+            position: relative;
+            width: 60%;
+            top: 35%;
+            left: 18%;
+        }
+
+        p {
+            position: relative;
+            bottom: 53%;
+            left: 30%;
+            color: white;
+            font-family: roboto slab;
+            font-size: 2vw;
+        }
+    }
+
+    .watch {
+        position: absolute;
+        left: 71%;
+        top: 55%;      
+        width: 18%;
+        height: 42vh;
+        background: rgb(209,149,93);
+        background: linear-gradient(90deg, rgba(209,149,93,1) 0%, rgba(190,91,0,1) 100%);
+        border-radius: 20px;
+        box-shadow: 0px 4px 0px 0px rgba(24, 24, 24, 0.4);
+        cursor: pointer;
+
+        img {
+            position: relative;
+            width: 80%;
+            top: 25%;
+            left: 13%;
+        }
+
+        p {
+            position: relative;
+            bottom: 71%;
+            left: 33%;
+            color: white;
+            font-family: roboto slab;
+            font-size: 2vw;
+        }
+    }
+    .ipad {
+        position: absolute;
+        left: 40%;
+        top: 55%;      
+        width: 18%;
+        height: 42vh;
+        background: rgb(103,236,140);
+        background: linear-gradient(90deg, rgba(103,236,140,1) 0%, rgba(0,148,112,1) 100%);
+        border-radius: 20px;
+        box-shadow: 0px 4px 0px 0px rgba(24, 24, 24, 0.4);
+        cursor: pointer;
+
+        img {
+            position: relative;
+            width: 80%;
+            top: 25%;
+            left: 13%;
+        }
+
+        p {
+            position: relative;
+            bottom: 71%;
+            left: 37%;
+            color: white;
+            font-family: roboto slab;
+            font-size: 2vw;
+        }
+    }
+}
